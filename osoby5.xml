@@ -38,4 +38,19 @@
             </predmet>
         </predmety>
     </osoba>
+    <osoba osCislo='R1247'>
+        <jmeno>Jana</jmeno>
+        <prijmeni>Holíková</prijmeni>
+        <stav>nestuduje</stav>
+        <obor>KMI</obor>
+        <rocnik>2</rocnik>
+        <pohlavi>žena</pohlavi>
+        <predmety>
+            <predmet>
+                <zkratka>WEB</zkratka>
+                <nazev>Webové technologie</nazev>
+                <kredity>2</kredity>
+            </predmet>
+        </predmety>
+    </osoba>
 </osoby>
