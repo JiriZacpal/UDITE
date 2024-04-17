@@ -1,0 +1,21 @@
+<?xml version='1.0' encoding='utf-8'?>
+<osoby>
+    <osoba osCislo='R1245'>
+        <jmeno>Jan</jmeno>
+        <prijmeni>Novák</prijmeni>
+        <stav>studuje</stav>
+        <obor>KMI</obor>
+        <rocnik>2</rocnik>
+        <email>jan.novak06@upol.cz</email>
+        <pohlavi>muž</pohlavi>
+        <kredity>12</kredity>
+    </osoba>
+    <osoba osCislo='R1246'>
+        <jmeno>Hana</jmeno>
+        <prijmeni>Holíková</prijmeni>
+        <stav>nestuduje</stav>
+        <obor>MATAP</obor>
+        <rocnik>1</rocnik>
+        <pohlavi>žena</pohlavi>
+    </osoba>
+</osoby>
