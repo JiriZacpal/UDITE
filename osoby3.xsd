@@ -1,0 +1,60 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:complexType name="predmetyTyp">
+        <xs:choice maxOccurs="unbounded">
+            <xs:element name="predmet">
+                <xs:complexType>
+                    <xs:sequence>
+                        <xs:element name="zkratka" type="xs:string" />
+                        <xs:element name="nazev" type="xs:string" />
+                        <xs:element name="kredity" type="xs:integer" />
+                    </xs:sequence>
+                    <xs:attribute name="osCislo" type="xs:string" />
+                </xs:complexType>
+            </xs:element>
+        </xs:choice>
+    </xs:complexType>
+
+    <xs:simpleType name="pohlavíTyp">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="muž" />
+            <xs:enumeration value="žena" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="ročníkTyp">
+        <xs:restriction base="xs:integer">
+            <xs:minInclusive value="1" />
+            <xs:maxExclusive value="3" />
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="emailTyp">
+        <xs:restriction base="xs:string">
+            <xs:pattern value="[^@]+@[^\.]+\..+"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:element name="osoby">
+        <xs:complexType>
+            <xs:choice maxOccurs="unbounded">
+                <xs:element name="osoba">
+                    <xs:complexType>
+                        <xs:sequence>
+                            <xs:element name="jmeno" type="xs:string" />
+                            <xs:element name="prijmeni" type="xs:string" />
+                            <xs:element name="stav" type="xs:string" />
+                            <xs:element name="obor" type="xs:string" />
+                            <xs:element name="rocnik" type="ročníkTyp" />
+                            <xs:element name="email" type="emailTyp" minOccurs="0" />
+                            <xs:element name="pohlavi" type="pohlavíTyp" />
+                            <xs:element name="kredity" type="xs:integer" minOccurs="0" />
+                            <xs:element name="predmety" type="predmetyTyp" />
+                        </xs:sequence>
+                        <xs:attribute name="osCislo" type="xs:string" />
+                    </xs:complexType>
+                </xs:element>
+            </xs:choice>
+        </xs:complexType>
+    </xs:element>
+</xs:schema>
