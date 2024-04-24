@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <?xml-model href="osoby3.xsd"?>
 <osoby>
-    <osoba osCislo='R1245'>
+    <osoba osCislo='R1246'>
         <jmeno>Jan</jmeno>
         <prijmeni>Novák</prijmeni>
         <stav>studuje</stav>
