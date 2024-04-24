@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <osoby>
     <osoba osCislo='R1245'>
-        <jmeno>Jan</jmeno>
+        <jmeno>Petr</jmeno>
         <prijmeni>Novák</prijmeni>
         <stav>studuje</stav>
         <obor>KMI</obor>
