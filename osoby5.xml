@@ -1,7 +1,7 @@
 <?xml version='1.0' encoding='utf-8'?>
 <?xml-model href="osoby3.xsd"?>
 <osoby>
-    <osoba osCislo='R1245'>
+    <osoba osCislo='R124'>
         <jmeno>Jan</jmeno>
         <prijmeni>Novák</prijmeni>
         <stav>studuje</stav>
@@ -29,6 +29,21 @@
         <stav>nestuduje</stav>
         <obor>MATAP</obor>
         <rocnik>1</rocnik>
+        <pohlavi>žena</pohlavi>
+        <predmety>
+            <predmet>
+                <zkratka>WEB</zkratka>
+                <nazev>Webové technologie</nazev>
+                <kredity>2</kredity>
+            </predmet>
+        </predmety>
+    </osoba>
+    <osoba osCislo='R1247'>
+        <jmeno>Jana</jmeno>
+        <prijmeni>Holíková</prijmeni>
+        <stav>nestuduje</stav>
+        <obor>KMI</obor>
+        <rocnik>2</rocnik>
         <pohlavi>žena</pohlavi>
         <predmety>
             <predmet>
